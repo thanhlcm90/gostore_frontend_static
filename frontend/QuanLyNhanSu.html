@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>Dịch vụ GoStore</title>
+  <title>Quản lý nhân sự</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -42,20 +42,22 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
-  <link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Global styles END --> 
    
   <!-- Page level plugin styles START -->
-  <link href="../../assets/global/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="../assets/global/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="../assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
   <!-- Page level plugin styles END -->
 
   <!-- Theme styles START -->
-  <link href="../../assets/global/css/components.css" rel="stylesheet">
-  <link href="../../assets/frontend/layout/css/style.css" rel="stylesheet">
-  <link href="../../assets/frontend/layout/css/style-responsive.css" rel="stylesheet">
-  <link href="../../assets/frontend/layout/css/themes/red.css" rel="stylesheet" id="style-color">
-  <link href="../../assets/frontend/layout/css/custom.css" rel="stylesheet">
+  <link href="../assets/global/css/components.css" rel="stylesheet">
+  <link href="../assets/frontend/layout/css/style.css" rel="stylesheet">
+  <link href="../assets/frontend/pages/css/portfolio.css" rel="stylesheet">
+  <link href="../assets/frontend/layout/css/style-responsive.css" rel="stylesheet">
+  <link href="../assets/frontend/layout/css/themes/red.css" rel="stylesheet" id="style-color">
+  <link href="../assets/frontend/layout/css/custom.css" rel="stylesheet">
   <!-- Theme styles END -->
 </head>
 <!-- Head END -->
@@ -67,7 +69,7 @@ License: You must have a valid license purchased only from themeforest (the abov
       <div class="color-mode-icons icon-color"></div>
       <div class="color-mode-icons icon-color-close"></div>
       <div class="color-mode">
-        <p>Tùy chỉnh màu sắc</p>
+        <p>THEME COLOR</p>
         <ul class="inline">
           <li class="color-red current color-default" data-style="red"></li>
           <li class="color-blue" data-style="blue"></li>
@@ -145,185 +147,79 @@ License: You must have a valid license purchased only from themeforest (the abov
 
     <div class="main">
       <div class="container">
-
-        <!-- BEGIN CONTENT -->
+        <ul class="breadcrumb">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="javascript:;">Tính năng</a></li>
+            <li class="active">Quản lý nhân sự</li>
+        </ul>
+        <!-- BEGIN SIDEBAR & CONTENT -->
         <div class="row margin-bottom-40">
           <!-- BEGIN CONTENT -->
           <div class="col-md-12 col-sm-12">
-            <h1>Phí dịch vụ của GoStore</h1>
+            <h1>Quản lý nhân sự</h1>
             <div class="content-page">
-              <div class="row margin-bottom-40">
-                <!-- Pricing -->
-                <div class="col-md-3">
-                  <div class="pricing hover-effect">
-                    <div class="pricing-head">
-                      <h3>Cửa hàng nhỏ
-                      <span>
-                         Nhỏ rất nhỏ
-                      </span>
-                      </h3>
-                      <h4><i>VNĐ</i>0<i>.000</i>
-                      <span>
-                         Per Month
-                      </span>
-                      </h4>
+              <div class="row margin-bottom-30">
+                <!-- BEGIN CAROUSEL -->            
+                <div class="col-md-5 front-carousel">
+                  <div class="carousel slide" id="myCarousel">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                      <div class="item">
+                        <img alt="" src="../assets/frontend/pages/img/works/img1.jpg">
+                        <div class="carousel-caption">
+                          <p>Quản lý nhanh chóng</p>
+                        </div>
+                      </div>
+                      <div class="item active">
+                        <img alt="" src="../assets/frontend/pages/img/works/img2.jpg">
+                        <div class="carousel-caption">
+                          <p>Quản lý chặt chẽ</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img alt="" src="../assets/frontend/pages/img/works/img3.jpg">
+                        <div class="carousel-caption">
+                          <p>Quản lý tiện lợi</p>
+                        </div>
+                      </div>
                     </div>
-                    <ul class="pricing-content list-unstyled">
-                      <li>
-                        <i class="fa fa-tags"></i> At vero eos
-                      </li>
-                      <li>
-                        <i class="fa fa-asterisk"></i> No Support
-                      </li>
-                      <li>
-                        <i class="fa fa-heart"></i> Fusce condimentum
-                      </li>
-                      <li>
-                        <i class="fa fa-star"></i> Ut non libero
-                      </li>
-                      <li>
-                        <i class="fa fa-shopping-cart"></i> Consecte adiping elit
-                      </li>
-                    </ul>
-                    <div class="pricing-footer">
-                      <p>
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                      </p>
-                      <a href="javascript:;" class="btn btn-primary">
-                         Sign Up <i class="m-icon-swapright m-icon-white"></i>
-                      </a>
+                    <!-- Carousel nav -->
+                    <a data-slide="prev" href="#myCarousel" class="carousel-control left">
+                      <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a data-slide="next" href="#myCarousel" class="carousel-control right">
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+                  </div>                
+                </div>
+                <!-- END CAROUSEL -->                             
+
+                <!-- BEGIN PORTFOLIO DESCRIPTION -->            
+                <div class="col-md-7">
+                  <h2>Tính năng quản lý nhân sự</h2>
+                  <p>Một ưu thế vượt trội của phần mềm bán hàng Ki-ốt Việt so với các phần mềm bán hàng khác đó là bạn có thể bán hàng ngay cả khi kết nối internet bị gián đoạn. Vì vậy, các chủ cửa hàng tạp hoá hoàn toàn yên tâm nếu máy chủ gặp sự cố hoặc kết nối internet bị mất trong quá trình bán hàng. Việc bán hàng của bạn vẫn diễn ra bình thường, mọi thông tin bán hàng sẽ được đồng bộ khi kết  nối internet hoạt động trở lại.</p>
+                  <br>
+                  <div class="row front-lists-v2 margin-bottom-15">
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li><i class="fa fa-html5"></i>Quản lý</li>
+                        <li><i class="fa fa-bell"></i>Phân quyền</li>
+                        <li><i class="fa fa-globe"></i>Thêm nhân viên</li>
+                        <li><i class="fa fa-shopping-cart"></i>Quản lý lương</li>
+                      </ul>
                     </div>
                   </div>
+                  <a class="btn btn-primary" href="javascript:;">Dùng thử</a>
                 </div>
-                <div class="col-md-3">
-                  <div class="pricing hover-effect">
-                    <div class="pricing-head">
-                      <h3>Cửa hàng vừa
-                      <span>
-                         Dùng thêm tính năng
-                      </span>
-                      </h3>
-                      <h4><i>$</i>8<i>.69</i>
-                      <span>
-                         Per Month
-                      </span>
-                      </h4>
-                    </div>
-                    <ul class="pricing-content list-unstyled">
-                      <li>
-                        <i class="fa fa-tags"></i> At vero eos
-                      </li>
-                      <li>
-                        <i class="fa fa-asterisk"></i> No Support
-                      </li>
-                      <li>
-                        <i class="fa fa-heart"></i> Fusce condimentum
-                      </li>
-                      <li>
-                        <i class="fa fa-star"></i> Ut non libero
-                      </li>
-                      <li>
-                        <i class="fa fa-shopping-cart"></i> Consecte adiping elit
-                      </li>
-                    </ul>
-                    <div class="pricing-footer">
-                      <p>
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                      </p>
-                      <a href="javascript:;" class="btn btn-primary">
-                         Sign Up <i class="m-icon-swapright m-icon-white"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="pricing pricing-active hover-effect">
-                    <div class="pricing-head pricing-head-active">
-                      <h3>Cửa hàng lớn
-                      <span>
-                         Officia deserunt mollitia
-                      </span>
-                      </h3>
-                      <h4><i>$</i>13<i>.99</i>
-                      <span>
-                         Per Month
-                      </span>
-                      </h4>
-                    </div>
-                    <ul class="pricing-content list-unstyled">
-                      <li>
-                        <i class="fa fa-tags"></i> At vero eos
-                      </li>
-                      <li>
-                        <i class="fa fa-asterisk"></i> No Support
-                      </li>
-                      <li>
-                        <i class="fa fa-heart"></i> Fusce condimentum
-                      </li>
-                      <li>
-                        <i class="fa fa-star"></i> Ut non libero
-                      </li>
-                      <li>
-                        <i class="fa fa-shopping-cart"></i> Consecte adiping elit
-                      </li>
-                    </ul>
-                    <div class="pricing-footer">
-                      <p>
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                      </p>
-                      <a href="javascript:;" class="btn btn-primary">
-                         Sign Up <i class="m-icon-swapright m-icon-white"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="pricing hover-effect">
-                    <div class="pricing-head">
-                      <h3>Công ty lớn
-                      <span>
-                         Officia deserunt mollitia
-                      </span>
-                      </h3>
-                      <h4><i>$</i>99<i>.00</i>
-                      <span>
-                         Per Month
-                      </span>
-                      </h4>
-                    </div>
-                    <ul class="pricing-content list-unstyled">
-                      <li>
-                        <i class="fa fa-tags"></i> At vero eos
-                      </li>
-                      <li>
-                        <i class="fa fa-asterisk"></i> No Support
-                      </li>
-                      <li>
-                        <i class="fa fa-heart"></i> Fusce condimentum
-                      </li>
-                      <li>
-                        <i class="fa fa-star"></i> Ut non libero
-                      </li>
-                      <li>
-                        <i class="fa fa-shopping-cart"></i> Consecte adiping elit
-                      </li>
-                    </ul>
-                    <div class="pricing-footer">
-                      <p>
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                      </p>
-                      <a href="javascript:;" class="btn btn-primary">
-                         Sign Up <i class="m-icon-swapright m-icon-white"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!--//End Pricing -->
+                <!-- END PORTFOLIO DESCRIPTION -->            
               </div>
+
+             
             </div>
           </div>
+          <!-- END CONTENT -->
         </div>
-        <!-- END CONTENT -->
+        <!-- BEGIN SIDEBAR & CONTENT -->
       </div>
     </div>
 
@@ -398,7 +294,7 @@ License: You must have a valid license purchased only from themeforest (the abov
     <!-- END PRE-FOOTER -->
 
     <!-- BEGIN FOOTER -->
-   <div class="footer">
+    <div class="footer">
       <div class="container">
         <div class="row">
           <!-- BEGIN COPYRIGHT -->
@@ -429,22 +325,24 @@ License: You must have a valid license purchased only from themeforest (the abov
     <!-- Load javascripts at bottom, this will reduce page load time -->
     <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
     <!--[if lt IE 9]>
-    <script src="../../assets/global/plugins/respond.min.js"></script>
+    <script src="../assets/global/plugins/respond.min.js"></script>
     <![endif]--> 
-    <script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
-    <script src="../../assets/frontend/layout/scripts/back-to-top.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script src="../assets/frontend/layout/scripts/back-to-top.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script src="../../assets/global/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
-
-    <script src="../../assets/frontend/layout/scripts/layout.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="../assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+    
+    <script src="../assets/frontend/layout/scripts/layout.js" type="text/javascript"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
-            Layout.init();    
+            Layout.init();
             Layout.initTwitter();
+            Layout.initOWL();
         });
     </script>
     <!-- END PAGE LEVEL JAVASCRIPTS -->
