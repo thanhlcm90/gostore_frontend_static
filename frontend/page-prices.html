@@ -42,20 +42,20 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
-  <link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Global styles END --> 
    
   <!-- Page level plugin styles START -->
-  <link href="../../assets/global/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="../assets/global/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
   <!-- Page level plugin styles END -->
 
   <!-- Theme styles START -->
-  <link href="../../assets/global/css/components.css" rel="stylesheet">
-  <link href="../../assets/frontend/layout/css/style.css" rel="stylesheet">
-  <link href="../../assets/frontend/layout/css/style-responsive.css" rel="stylesheet">
-  <link href="../../assets/frontend/layout/css/themes/red.css" rel="stylesheet" id="style-color">
-  <link href="../../assets/frontend/layout/css/custom.css" rel="stylesheet">
+  <link href="../assets/global/css/components.css" rel="stylesheet">
+  <link href="../assets/frontend/layout/css/style.css" rel="stylesheet">
+  <link href="../assets/frontend/layout/css/style-responsive.css" rel="stylesheet">
+  <link href="../assets/frontend/layout/css/themes/red.css" rel="stylesheet" id="style-color">
+  <link href="../assets/frontend/layout/css/custom.css" rel="stylesheet">
   <!-- Theme styles END -->
 </head>
 <!-- Head END -->
@@ -95,13 +95,158 @@ License: You must have a valid license purchased only from themeforest (the abov
                 <!-- BEGIN TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
-                        <li><a href="page-login.html">Đăng nhập</a></li>
-                        <li><a href="page-reg-page.html">Đăng ký</a></li>
+                        <li><a class="btn" data-toggle="modal" data-target="#DangNhap">Đăng nhập</a></li>
+                        <li><a class="btn" data-toggle="modal" data-target="#DangKy">Đăng ký</a></li>
                     </ul>
                 </div>
+                <!-- BEGIN MODAL -->
+                <div id="DangNhap" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Đăng nhập vào cửa hàng</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="content-form-page">
+                                    <div class="row">
+                                        <div class="col-md-9 col-sm-9">
+                                            <form class="form-horizontal form-without-legend" role="form">
+                                                <div class="form-group">
+                                                    <div class="col-lg-12">
+                                                        <div class="input-group">
+                                                            <span class="input-group-btn">
+                        <button class="btn gray" type="button">https://</button>
+                      </span>
+                                                            <input type="text" class="form-control" placeholder="maymacviet">
+                                                            <span class="input-group-btn">
+                        <button class="btn gray" type="button">.localhost:8084</button>
+                      </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Vào cửa hàng</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng lại</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="DangKy" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <center><h4 class="modal-title">TẠO MỚI TÀI KHOẢN</h4></center>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="content-form-page">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 ">
+                                            <form class="form-horizontal" role="form">
+                                                <fieldset>
+                                                  <legend>Thông tin tài khoản</legend>
+                                                    <div class="form-group">
+                                                        <label for="lastname" class="col-lg-4 control-label">Tên đăng nhập <span class="require">*</span></label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" id="lastname">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="password" class="col-lg-4 control-label">Mật khẩu <span class="require">*</span></label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" id="password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="confirm-password" class="col-lg-4 control-label">Nhập lại mật khẩu <span class="require">*</span></label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" id="confirm-password">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 ">
+                                            <form class="form-horizontal" role="form">
+                                                <fieldset>
+                                                  <legend>Thông tin cửa hàng</legend>
+                                                    <div class="form-group">
+                                                        <label for="firstname" class="col-lg-4 control-label">Họ và tên <span class="require">*</span></label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" id="firstname">
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div class="form-group">
+                                                        <label for="email" class="col-lg-4 control-label">Email <span class="require">*</span></label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" id="email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="phone" class="col-lg-4 control-label">Điện thoại <span class="require">*</span></label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" id="phone">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="storename" class="col-lg-4 control-label">Tên cửa hàng <span class="require">*</span></label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" id="storename" placeholder="May mặc đất Việt">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="stylestore" class="col-lg-4 control-label">Loại cửa hàng <span class="require">*</span></label>
+                                                        <div class="col-lg-8">
+                                                            <select name="select" id="s1" class="form-control ">
+                                                                <option value="0">Thời trang</option>
+                                                                <option value="1">Nhà thuốc</option>
+                                                                <option value="2">Bar-Coffee-Nhà hàng</option>
+                                                                <option value="3">Tạp hóa</option>
+                                                                <option value="4">Điện tử</option>
+                                                                <option value="5">Nội thất & Gia dụng</option>
+                                                                <option value="6">Xe máy & Linh kiện</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="storename" class="col-lg-4 control-label">Địa chỉ trang web <span class="require">*</span></label>
+                                                        <div class="col-lg-8">
+                                                            https://
+                                                            <input type="text" style="width:40%;height:35px" id="storename" placeholder="maymacdatviet">.localhost:8084
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <div class="row">
+                                                    <div class="col-lg-8 col-md-offset-4 padding-left-0 padding-top-20">
+                                                        
+                                                        <div class="modal-footer">
+                                                          <button type="submit" class="btn btn-primary">Đăng ký</button>
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END MODAL -->
                 <!-- END TOP BAR MENU -->
             </div>
-        </div>        
+        </div>
     </div>
     <!-- END TOP BAR -->
     <!-- BEGIN HEADER -->
@@ -429,18 +574,18 @@ License: You must have a valid license purchased only from themeforest (the abov
     <!-- Load javascripts at bottom, this will reduce page load time -->
     <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
     <!--[if lt IE 9]>
-    <script src="../../assets/global/plugins/respond.min.js"></script>
+    <script src="../assets/global/plugins/respond.min.js"></script>
     <![endif]--> 
-    <script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
-    <script src="../../assets/frontend/layout/scripts/back-to-top.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script src="../assets/frontend/layout/scripts/back-to-top.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script src="../../assets/global/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="../assets/global/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
 
-    <script src="../../assets/frontend/layout/scripts/layout.js" type="text/javascript"></script>
+    <script src="../assets/frontend/layout/scripts/layout.js" type="text/javascript"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             Layout.init();    
