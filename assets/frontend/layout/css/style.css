@@ -2839,6 +2839,7 @@ Demo Utils
 .pricing {
   position: relative;
   margin-bottom: 15px;
+  min-height: 550px;
   border: 3px solid #eee;
 }
 .pricing-active {
@@ -2923,6 +2924,10 @@ Demo Utils
   padding: 0 20px 19px;
 }
 
+.pricing-footer p {
+	color: : #EE0000;
+	font-size: 14px;
+}
 .pricing-footer .btn {
   color: #fff;
 }
